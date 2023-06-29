@@ -1,0 +1,587 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-color: rgb(241, 237, 227);
+}
+
+/*MENU*/
+nav{
+    background-color: rgb(82, 151, 97);
+    height: 70px;
+    padding: 6px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+.dvFlex{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#logo{
+    width: 200px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu li{
+    margin-right: 30px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.menu li a{
+    color: rgb(241, 237, 227);
+    transition: all 300ms ease-in-out;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Caprasimo', cursive;
+}
+
+ul li{
+    font-weight: 600;
+}
+
+.menu img:hover{
+    filter: brightness(1.18);
+}
+/*FIN MENU*/
+
+/*SLIDER*/
+.dvSlider{
+    background-color:rgb(241, 237, 227);
+    overflow: hidden;
+    margin-top: 70px;
+}
+
+#myCarousel {
+    color: #000000;
+    --carousel-button-bg: #ffffff40;
+    --carousel-button-svg-stroke-width: 2;
+}
+
+.carousel__slide {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.carousel__slide img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+/* FIN SLIDER */
+
+/*ENCABEZADO*/
+
+header{
+    background-color:rgb(241, 237, 227);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: auto;
+}
+
+.centrar{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.centrar img{
+    margin: 30px;
+}
+
+.centrar .titulo{
+    color: rgb(82, 151, 97);
+}
+
+.encabezado .centrar h1{
+    color: black;
+}
+
+.boton{
+    color: rgb(241, 237, 227);
+    width: 250px;
+    height: 40px;
+    font-size: 17px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 400;
+    background-color:  rgb(82, 151, 97);
+    display: block;
+    border-radius: 30px;
+    margin-top: 20px;
+    transition: all 200ms ease-in-out;
+    text-decoration: none;
+    font-family: 'Caprasimo', cursive;
+}
+
+.encabezado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 500px;
+    margin-top: 60px;
+}
+
+.encabezado div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    margin: auto;
+}
+
+.centrar h1{
+    font-weight: 100;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 20px;
+    color: black;
+    font-weight: 400;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
+.encabezado img{
+    margin-top: 20px;
+}
+
+.tituloo{
+    font-family: 'Caprasimo', cursive;
+    font-size: 45px;
+    font-weight: 400;
+    color:rgb(82, 151, 97);
+}
+
+/*ENCABEZADO*/
+
+
+/*DESTACADO*/
+.destacados{
+    background-size: 60%;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.destacados h1{
+    color:rgb(82, 151, 97);
+    font-size: 45px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-family: 'Caprasimo', cursive;
+}
+
+.destacados p{
+    font-weight: 100;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 20px;
+    color: black;
+    font-weight: 400;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
+/*DESTACADO */
+
+/* HELADOS */
+
+.opciones article{
+    width: 305px;
+    height: 430px;
+    padding: 30px;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    background-color:#E1D9CE;
+    transition: all 300ms ease-in-out;
+    border-radius: 10px;
+}
+
+.card:hover{
+    transform: scale(101.5%);
+}
+
+
+.opciones a{
+    color: rgb(241, 237, 227);
+    width: 150px;
+    height: 40px;
+    font-size: 17px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 400;
+    background-color: rgb(82, 151, 97);
+    display: block;
+    border-radius: 30px;
+    margin-top: 20px;
+    transition: all 200ms ease-in-out;
+    text-decoration: none;
+}
+
+.opciones{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: 960px;
+}
+
+.opciones h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    font-family: 'Caprasimo', cursive;
+    font-style: italic;
+}
+
+.opciones img{
+    width: 220px;
+    height: 0 auto;
+}
+
+.btnVerGustos{
+    color: rgb(241, 237, 227);
+    width: 250px;
+    height: 40px;
+    font-size: 17px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 400;
+    background-color:  rgb(82, 151, 97);
+    display: block;
+    border-radius: 30px;
+    margin-top: 50px;
+    transition: all 200ms ease-in-out;
+    text-decoration: none;
+    font-family: 'Caprasimo', cursive;
+}
+
+.btnComprar{
+    font-family: 'Caprasimo', cursive;
+}
+
+.opciones p{
+    font-size: 24px;
+    font-weight: 300;
+    color: black;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
+.pitahaya{
+    margin-top: -20px;
+}
+
+.crema{
+    margin-top: -20px;
+}
+
+.chocolate{
+    margin-top: -20px;
+}
+
+.card p{
+    font-size: 12px;
+}
+
+/*HELADOS */
+
+/* NOSOTROS */
+#sectionNostros{
+    background-color: rgb(241, 237, 227);
+    margin-top: 80px;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+}
+
+.titulo{
+    margin: auto;
+    margin-left: 80px;
+}
+
+.tituloNosotros{
+    color:  rgb(82, 151, 97);
+    text-align: left;
+    margin-top: 0px;
+    margin-left: 80px;
+    font-family: 'Caprasimo', cursive;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.historia{
+    width: 550px;
+    padding-top: 30px;
+    margin-right: -150px;
+}
+
+.foto{
+    width: 750px;
+}
+
+.imgHelado{
+    display: flex;
+    align-items: center;
+}
+
+.foto img{
+    width: 650px;
+    height: 0 auto;
+    padding-top: 50px;
+}
+
+#sectionNostros p{
+    color: black;
+    font-size: 25px;
+    font-weight: 300;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+/* NOSOTROS */
+
+/*INFORMACION*/
+h2{
+    color: rgb(82, 151, 97);
+    text-align: center;
+    font-family: 'Caprasimo', cursive;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.laInformacion article{
+    width: 305px;
+    height: 350px;
+    padding: 30px;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    background-color: #E1D9CE;
+    border-radius: 30px;
+    transition: all 300ms ease-in-out;
+}
+
+.card:hover{
+    transform: scale(101.5%);
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    font-family: 'Caprasimo', cursive;
+    font-style: italic;
+    margin-bottom: 10px;
+    margin-top: 9px;
+}
+
+.laInformacion a{
+    color: rgb(241, 237, 227);
+    width: 250px;
+    height: 40px;
+    font-size: 17px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 400;
+    background-color:  rgb(82, 151, 97);
+    display: block;
+    border-radius: 30px;
+    margin-top: 10px;
+    transition: all 200ms ease-in-out;
+    text-decoration: none;
+    font-family: 'Caprasimo', cursive;
+}
+
+.laInformacion{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: 960px;
+}
+
+.laInformacion img{
+    width: 160px;
+    height: 0 auto;
+    margin-top: -10px;
+}
+
+.laInformacion p{
+    font-size: 12.5px;
+    font-weight: 400;
+    color: black;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
+#sectionInformacion{
+    margin-top: 80px;
+}
+/*INFORMACION*/
+
+/* CONTACTO */
+
+.formulario{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+form{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.formulario p{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-weight: 700;
+}
+
+.formulario h2{
+    color: rgb(82, 151, 97);
+    font-family: 'Caprasimo', cursive;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#sectionContacto{
+    padding: 10px 0 50px 0;
+    margin-top: 50px;
+}
+
+#nombre-y-apellido,#correo-electronico{
+    padding: 10px;
+}
+
+#escribe-tu-consulta{
+    padding: 10px;
+}
+
+#nombre-y-apellido,#correo-electronico,#escribe-tu-consulta{
+    display: block;
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+    font-size: 11px;
+}
+
+label{
+    display: flex;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    margin-left: 220px;
+    color: black;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
+.espaciado{
+    margin: 16px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.enviar{
+    color: white;
+    width: 170px;
+    height: 35px;
+    font-size: 13px;
+    line-height: 20px;
+    background-color: rgb(82, 151, 97);
+    border-radius: 30px;
+    margin: 2px;
+    cursor: pointer;
+    border: none;
+    transition: all 200ms ease-in-out;
+    font-family: 'Caprasimo', cursive;
+}
+
+.borrar{
+    color:white;
+    width: 150px;
+    height: 34px;
+    font-size: 13px;
+    line-height: 20px;
+    background-color: rgb(82, 151, 97);
+    border-radius: 30px;
+    margin-top: 30px;
+    align-items: center;
+    margin: 2px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    transition: all 200ms ease-in-out;
+    font-family: 'Caprasimo', cursive;
+}
+
+/* FIN FORMULARIO */
+
+/* FOOTER */
+
+footer{
+    margin-top: 60px;
+    background-color: rgb(82, 151, 97);
+    width: 100%;
+    text-align: center;
+    font-weight: 6000;
+    text-overflow: inherit;
+    padding: 30px 40px;
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    position: absolute;
+    gap: 1.5rem;
+}
+
+footer img{
+    width: 25px;
+    height: 25px;
+    gap: 1.5rem;
+}
+
+.derechos{
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-size: 15px;
+    color: rgb(241, 237, 227);
+    float: right;
+}
+
+
+/* FOOTER */
+
